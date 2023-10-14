@@ -1,0 +1,179 @@
+{
+	"nama": "grid",
+	"matlok": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0,
+		0,
+		0,
+		1
+	],
+	"matglo": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0,
+		0,
+		0,
+		1
+	],
+	"matview": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0,
+		0,
+		0,
+		1
+	],
+	"children": [
+		{
+			"nama": "node0",
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"matglo": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"matview": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"children": [],
+			"nodeid": 0,
+			"fill": "#ffffff66",
+			"stroke": "rgba(251.0517167510695,170.01501682382985,231.95318763039867,1)",
+			"SH": true,
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"titikpath": [
+				0,
+				0
+			],
+			"order": 0,
+			"hoverbox": [
+				15,
+				0,
+				0,
+				0,
+				15,
+				0,
+				0,
+				0,
+				1
+			],
+			"div": {},
+			"div_span": {},
+			"div_chi": {},
+			"txnode": {},
+			"txdata": {},
+			"txchi": {},
+			"aniref": {},
+			"anirefnama": {},
+			"anirefchi": {}
+		},
+		{
+			"nama": "node1",
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"matglo": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"matview": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"children": [],
+			"nodeid": 1,
+			"fill": "#ffffff66",
+			"stroke": "rgba(155.07757017075872,226.56043210480763,117.4315423516297,1)",
+			"SH": true,
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"titikpath": [
+				0,
+				0
+			],
+			"order": 1,
+			"hoverbox": [
+				15,
+				0,
+				0,
+				0,
+				15,
+				0,
+				0,
+				0,
+				1
+			],
+			"div": {},
+			"div_span": {},
+			"div_chi": {},
+			"txnode": {},
+			"txdata": {},
+			"txchi": {},
+			"aniref": {},
+			"anirefnama": {},
+			"anirefchi": {}
+		}
+	],
+	"bentuklama": {}
+}

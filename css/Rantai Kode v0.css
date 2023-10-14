@@ -1,0 +1,401 @@
+html{
+	overflow:hidden;
+}
+body{
+	background-color:#007700;
+	color:white;
+	font-family:Consolas;
+	width: fit-content;
+	max-width: -webkit-fill-available;
+	max-height: -webkit-fill-available;
+}
+canvas{
+	background-color:black;
+    z-index: -1;
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+	/*image-rendering: pixelated;*/
+}
+input,
+select{
+	background:black;
+	color:#00ff00;
+	font-family:Consolas;
+	border:1.2px solid #555555;
+}
+option{
+	background:black;
+}
+
+.htmlUI0baaru,
+.htmlUI3{
+	position:absolute;
+	left:0px;
+	top:0px;
+	resize: both;
+	overflow:scroll;
+	width: 166px;
+	white-space: nowrap;
+	background: #00004477;
+	max-width: 100%;
+	max-height: 100%;
+}
+	.menusubjudul{
+		font-size:18px;
+		color:cyan;
+	}
+	.tombol{
+		width: fit-content;
+		user-select: none;
+	}
+	.tombol > *{
+		background:#00000088;
+		user-select: none;
+		height:27px;
+	}
+	.tombol > * > td:first-child:hover,
+	.tombol > div:hover{
+		background:grey;
+	}
+	.translate > *:first-child,
+	.skew > *:first-child,
+	.persp > *:first-child{
+		cursor:move;
+	}
+	.rotate > *:first-child
+	{
+		cursor: e-resize;
+	}
+	.scale > *:first-child,
+	.order,
+	.txorder{
+		cursor: n-resize;
+	}
+	.SHname > *:first-child > input,
+	.SHaxis > *:first-child > input,
+	.SHchildren > *:first-child > input,
+	.SHfill > *:first-child > input,
+	.SHstroke > *:first-child > input,
+	.insto > *:first-child > input
+	{
+		pointer-events: none;
+	}
+	.menudata,
+	.menuedit,
+	.menufile{
+		border-collapse:collapse;
+	}
+	.menudata tr > td:last-child{
+		width:120px;
+		display:flex;
+	}
+	.menudata tr > td:last-child > input{
+		width:0px;
+		flex:1;
+	}
+.trfinp > *,
+.trfcontrol > *{
+	display:flex;
+}
+.trfinp > * > input{
+	flex:auto;
+	width:0px;
+}
+.trfcontrol{
+	flex:5;
+}
+.trfsamping{
+	flex:1;
+	display:flex;
+	flex-direction: column;
+	white-space:normal;
+}
+.htmlUI1,
+.htmlUI2
+{
+	white-space: nowrap;
+	background: #000000cc;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+}
+.htmlUI1 .hlmtext,
+.htmlUI2 .hlmnode
+{
+	flex:auto;
+	overflow:scroll;
+}
+.htmlUI1flex{
+	flex: auto;
+	display: flex;
+	overflow: auto;
+	height:0px;
+}
+.hlmlist{
+	resize: horizontal;
+	overflow: scroll;
+}
+.divchi,
+.anirefchi{
+	margin-left:22px;
+}
+.hlmtext{
+	width:0px;
+	font-size:12px;
+}
+.hlmtext>span{
+	outline:none;
+}
+.hlmtext>span span{
+	tab-size:4;
+	white-space:pre;
+}
+.hlmtext>span .dipilih{
+	outline:2px solid currentColor;
+}
+.hlmlist .dipilih{
+	border:2px solid currentColor;
+}
+.tombolbaaru,
+.gbtombol{
+	overflow-x:scroll;
+	overflow-y:hidden;
+	width:100%;
+}
+/*
+.hlmtext span[contenteditable="true"]{
+	white-space:pre;
+}
+.hlmtext span[contenteditable="true"]:focus{
+	outline:2px solid currentColor;
+}
+.hlmtext span[contenteditable="true"] :last-child{
+	content:"";
+}
+.hlmtext span[contenteditable="true"]:empty :last-child:after,
+.hlmtext span[contenteditable="true"]:focus :last-child:after{
+	content:"end";
+	font-size:7px;
+}
+*/
+.insertnodechecked{
+	background:#999900;
+}
+.checked{
+	background:#007700;
+}
+svg{
+	border:1.3px solid #aabbff00;
+}
+svg:hover{
+	border:1.3px solid white;
+}
+svg *{
+	pointer-events:none;
+}
+.tra,
+.per{
+	cursor:move;
+}
+.rot,
+.trax,
+.shex,
+.scax,
+.perx{
+	cursor:e-resize;
+}
+.sca,
+.tray,
+.shey,
+.scay,
+.pery{
+	cursor:n-resize;
+}
+.nameflex,
+.orderflex,
+.fillflex,
+.strokeflex,
+.saveflex,
+.openflex,
+.exportflex,
+.lainflex
+{
+	display:flex;
+}
+.nameflex > svg,
+.orderflex > svg,
+.fillflex > svg,
+.strokeflex > svg,
+.openflex > svg,
+.saveflex > svg,
+.exportflex > svg
+{
+	flex:1;
+}
+.nameflex > input,
+.orderflex > input,
+.fillflex > input,
+.strokeflex > input,
+.openflex > div,
+.saveflex > input,
+.exportflex > input,
+.lainflex > input
+{
+	flex:6;
+	width:0px;
+}
+.lainflex > svg{
+	width:18%;
+}
+.closing{
+	transform:scale(-1,1);
+}
+.editflex > div{
+	display:flex;
+}
+.editflex > div > svg{
+	flex:1;
+}
+.mousetext{
+	position:absolute;
+	pointer-events:none;
+	background:#00000077;
+	border:.7px solid yellow;
+	padding:3px;
+}
+.mousetext > *{
+	display:none;
+}
+.mousetextmuncul{
+	display:block;
+}
+.editdata{
+	display:block;
+	width:0px;
+	height:0px;
+	color: white;
+	background: #00000000;
+	tab-size: 4;
+	white-space: pre;
+	resize:none;
+	font-size:inherit;
+}
+.editdata:focus,
+.editnama:focus{
+	outline:2px solid currentColor;
+}
+.divsh {
+	user-select: none;
+	padding: 5px;
+}
+.divsh:hover{
+	background:#ffffff33;
+}
+.divspan:empty,
+.anirefnama:empty{
+	padding-right:100%;
+}
+
+.gbtable,
+.gbtable td{
+	border:2px solid green;
+	border-collapse:collapse;
+	padding: 5px;
+}
+.gbtable thead{
+	text-align: center;
+	font-weight: bold;
+}
+.gbtd tr:hover td{
+	color:white;
+}
+.sampahdipilih{
+	background:#ffffff55;
+}
+
+.htmlUI3{
+	width:initial;
+	display:flex;
+	flex-direction: column;
+}
+.animenu,
+.reflist{
+	width: 100%;
+	overflow: scroll;
+	resize:vertical;
+}
+.animenu > *{
+	vertical-align:middle;
+}
+.animenu > input,
+.animenu > select{
+	width:111px;
+	height:initial;
+}
+.ref{
+	width:100%;
+}
+.anirefnama:hover{
+	background:#ffffff33;
+}
+.aniflex{
+	display:flex;
+	height:initial;
+}
+.aniflex > *{
+	flex:1;
+	width:0px;
+}
+.matrixlist{
+	flex:1;
+	overflow:scroll;
+}
+.matrixlist svg{
+	height:22px;
+	vertical-align:middle;
+}
+.matrix:after{
+	content:attr(opetex);
+	vertical-align:super;
+}
+.assinama:hover,
+.matrix:hover{
+	outline:.8px dashed cyan;
+}
+.anidipilih{
+	outline:.8px solid yellow !important;
+}
+.assibg{
+	background:#663300;
+}
+.time,
+.speed{
+	cursor: e-resize;
+}
+
+.hilang,
+.diedit{
+	display:none;
+}
+.eledisabled{
+	filter:brightness(.4);
+}
+::-webkit-scrollbar{
+  width:11px;
+  height:11px;
+}
+::-webkit-scrollbar-track {
+  background: #00ff0044; 
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff00; 
+}
+::-webkit-scrollbar-corner{
+  background: #007700; 
+}

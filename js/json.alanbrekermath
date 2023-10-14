@@ -1,0 +1,407 @@
+{
+	"namasimpan": "json.alanbrekermath",
+	"namaexport": "terserah.txt",
+	"label": "maju sek",
+	"matcam": [
+		0.1590987741947174,
+		0.11604249477386475,
+		0,
+		-0.21487723290920258,
+		0.3351375162601471,
+		0,
+		-138.53858947753906,
+		30.14493179321289,
+		1
+	],
+	"animasi": [
+		{
+			"node": 1,
+			"matrix": [
+				{
+					"node": 4,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 4,
+					"time": 55029.38934090892,
+					"speed": 25,
+					"label": "mylabel"
+				},
+				{
+					"node": "identity",
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 0,
+			"matrix": [
+				{
+					"node": 0,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 1,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				},
+				{
+					"node": 10,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "maju"
+				}
+			]
+		},
+		{
+			"node": "camera",
+			"matrix": [
+				{
+					"node": 0,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 5,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				},
+				{
+					"node": 6,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 11,
+			"matrix": [
+				{
+					"node": "camera",
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": "identity",
+			"matrix": []
+		}
+	],
+	"nodes": [
+		{
+			"name": "",
+			"children": [
+				1,
+				2,
+				3
+			],
+			"matlok": [
+				0.2206481546163559,
+				0,
+				0,
+				-0.09393931925296783,
+				0.2206481546163559,
+				0,
+				-138.9049530029297,
+				31.00545883178711,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(110.93144381024915,244.33013134616357,110.01358848000741,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|"
+		},
+		{
+			"name": "e",
+			"children": [],
+			"matlok": [
+				0.9663875102996826,
+				0.3211556673049927,
+				0,
+				-0.19980445504188538,
+				1.3168572187423706,
+				0,
+				0,
+				-6.430716514587402,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(182.8251817569698,206.29939417998963,103.83730471272573,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 0,
+			"data": "|----|"
+		},
+		{
+			"name": "iπ",
+			"children": [],
+			"matlok": [
+				0.4639018177986145,
+				0,
+				0,
+				0,
+				0.4639018177986145,
+				0,
+				12.061445236206055,
+				-11.458373069763184,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "yellow",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|"
+		},
+		{
+			"name": "",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "cyan",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 5,
+			"data": "cameraku"
+		},
+		{
+			"name": "gerak e",
+			"children": [
+				5,
+				6,
+				7,
+				8,
+				9
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-106.59990692138672,
+				-22.099994659423828,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(209.09946815598175,106.09828568563911,176.17010040665363,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 2,
+			"data": "|----|"
+		},
+		{
+			"name": "awal",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 0,
+			"data": "|----|"
+		},
+		{
+			"name": "lompat",
+			"children": [],
+			"matlok": [
+				0.9449569582939148,
+				0.5259164571762085,
+				0,
+				-0.3271947503089905,
+				1.5188775062561035,
+				0,
+				0,
+				-3.9000003337860107,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|"
+		},
+		{
+			"name": "terbang",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				-10.40000057220459,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 2,
+			"data": "|----|"
+		},
+		{
+			"name": "turun",
+			"children": [],
+			"matlok": [
+				0.9747437238693237,
+				-0.2233259379863739,
+				0,
+				0.2233259379863739,
+				0.9747437238693237,
+				0,
+				0,
+				-3.8999998569488525,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 3,
+			"data": "|----|"
+		},
+		{
+			"name": "ke awal",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 4,
+			"data": "|----|"
+		},
+		{
+			"name": "maju",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				2,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(230.207979782634,238.76975506027637,208.69319838791563,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 3,
+			"data": "|----|"
+		},
+		{
+			"name": "turundikit",
+			"children": [],
+			"matlok": [
+				0.1590987741947174,
+				0.11604249477386475,
+				0,
+				-0.21487723290920258,
+				0.3351375162601471,
+				0,
+				-138.53858947753906,
+				30.14493179321289,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(145.30302593412736,248.0797887580558,110.87466971699006,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 4,
+			"data": "|----|"
+		}
+	]
+}
