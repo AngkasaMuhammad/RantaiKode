@@ -242,7 +242,7 @@ svg *{
 .orderflex > input,
 .fillflex > input,
 .strokeflex > input,
-.openflex > div,
+.openflex > select,
 .saveflex > input,
 .exportflex > input,
 .lainflex > input
@@ -377,6 +377,37 @@ svg *{
 .time,
 .speed{
 	cursor: e-resize;
+}
+
+.htmlUI4{
+	position:absolute;
+	left:50%;
+	top:0px;
+}
+.htmlUI4 .judulhelp{
+	user-select:none;
+	width:fit-content;
+	cursor:move;
+}
+.htmlUI4 .panah{
+	width:22px;
+	user-select:none;
+}
+.htmlUI4 .vertali{/*vertical-align*/
+	vertical-align:middle;
+}
+.htmlUI4 .helpcontent{
+	overflow:scroll;
+	resize:both;
+	color:#aaaaaa;
+}
+.htmlUI4 .helpcontent > :not(.helptampil),
+.htmlUI4 .helpcontent > * > :not(.steptampil)
+{
+	display:none;
+}
+.htmlUI4 [tunjuk]{
+	color:yellow;
 }
 
 .hilang,

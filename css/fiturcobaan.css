@@ -1,3 +1,32 @@
-.cobaan{
-	
+.pfc{
+	position:absolute;
+	user-select:none;
+	white-space:nowrap;
+	width:222px;
+}
+.pfc button{
+	background:black;
+	color:#66ff66;
+}
+.pfc button:hover{
+	border:2px solid #00ff00;
+}
+.pfcdrag{
+	cursor:move;
+	width:fit-content;
+}
+.pfcdrag:hover{
+	background:#55555599;
+}
+.pfctools{
+	overflow:scroll;
+	resize:both;
+}
+.pfcflex{
+	display:flex;
+}
+.pfcflex .inpgear_n,
+.pfcflex .inpgear_rad{
+	width:0px;
+	flex:auto;
 }

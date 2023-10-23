@@ -318,6 +318,7 @@ let rk = rantaikode
 	let sampah = null
 	let pilihsampah
 	let sampahsiap = false//agar tidak deselect sampah
+	let sample
 	
 	let matpinjam0 = m3.create()
 	let matpinjam1 = m3.create()
@@ -793,7 +794,7 @@ let rk = rantaikode
 		})
 		let deletenode = cla('deletenode')[0]
 		fclick_deletenode = e=>{
-			if(!nodedipilih){return}
+			if(!nodedipilih || !confirm('Node will be deleted. Continue?')){return}
 			
 			arrgb.push(nodedipilih)
 			let tr = document.createElement('tr')
@@ -851,7 +852,7 @@ let rk = rantaikode
 			
 			tidakdipilih()
 		}
-		deletenode.addEventListener('dblclick',fclick_deletenode,)
+		deletenode.addEventListener('click',fclick_deletenode,)
 		let gbtd = cla('gbtd')[0]
 		namecheck.addEventListener('click',e=>{
 			if(!nodedipilih){return}
@@ -902,73 +903,8 @@ let rk = rantaikode
 		})
 		let bukafile = cla('bukafile')[0]
 		bukafile.addEventListener('change',e=>{
-			 bukafile.files[0].text().then(muatfile)
+			 bukafile.files[0].text().then(bikinsample)
 		},)
-		let muatfile = src=>{
-			inpopen.textContent = bukafile.files[0].name
-			let json = JSON.parse(src)
-			lih(json)
-			
-			inpsave.value = json.namasimpan
-			inpexport.value = json.namaexport
-			m3.copy(matcam,json.matcam,)
-			
-			//nodes
-			let arr_node = []
-			let arr_par = Array(json.nodes.length).fill(null)
-			for(let naA in json.nodes){
-				let nodesrc = json.nodes[naA = +naA]
-				let node = bikinnode(arr_par[naA])
-				arr_node.push(node)
-				for(let vaB of nodesrc.children){
-					if(arr_par[vaB] !== null){
-						let err = 'error: recursive child/multiple parent'
-						return alert(err)
-					}
-					arr_par[vaB] = node
-				}
-				
-				//prop
-				m3.copy(node.matlok,nodesrc.matlok,)
-				node.nama = 
-				node.div_span.textContent = nodesrc.name
-				node.fill = nodesrc.fill
-				node.stroke =
-				node.div_span.style.color = 
-				node.txdata.style.color = nodesrc.stroke
-				node.order = nodesrc.order
-				node.SHname = nodesrc.SHname
-				node.SHfill = nodesrc.SHfill
-				node.SHstroke = nodesrc.SHstroke
-				node.SHchildren = nodesrc.SHchildren
-				node.txdata.textContent = nodesrc.data
-				updnodeani(node)
-			}
-			
-			//ani
-			labelvalue = json.label
-			for(let assi of json.animasi){
-				let assinama = bikinassi()
-				anisetnode(arr_node[assi.node]?.anirefnama??cla(assi.node)[0],assinama,)
-				
-				for(let matrixsrc of assi.matrix){
-					let matrix = bikinmatrix(assinama)
-					anisetnode(arr_node[matrixsrc.node]?.anirefnama??cla(matrixsrc.node)[0],matrix,)
-					matrix.setAttribute('opetex',
-						que(`.operation [value="${matrixsrc.operasi}"]`)[0].getAttribute('opetex')
-					,)
-					let aniobj = carianiobj(matrix)
-					aniobj.operasi	= matrixsrc.operasi
-					aniobj.usechi	= matrixsrc.usechi
-					aniobj.playing	= matrixsrc.playing
-					aniobj.start	= matrixsrc.start
-					aniobj.end	= matrixsrc.end
-					aniobj.time	= matrixsrc.time
-					aniobj.speed	= matrixsrc.speed
-					aniobj.label	= matrixsrc.label
-				}
-			}
-		}
 		let save = cla('save')[0]
 		save.addEventListener('click',e=>{
 			let json = {
@@ -1078,8 +1014,125 @@ let rk = rantaikode
 			)
 		})
 		let inpopen = cla('inpopen')[0]
+		inpopen.addEventListener('input',e=>{
+			if(confirm('Nodes & animations will be added. Continue?')){
+				muatsample(sample[lih(e.currentTarget.value)])
+			}
+			inpopen.value = ''
+		})
+		inpopen.value = ''
+		sample = []
+		
+		let restext = res=>res.text()
+		
+		let samplehref
+		fetch("js/samples.json").
+		then(res=>{
+			samplehref = res.url
+			return res.json()
+		}).
+		then(json=>{
+			for(let path of json){
+				fetch(ru.cariurl(samplehref,path,)).
+				then(restext).
+				then(bikinsample)
+			}
+		})
+		
+		let bikinsample = text=>{
+			let json = JSON.parse(text)
+			sample.push(lih(json))
+			let opt = document.createElement('option')
+			inpopen.appendChild(opt)
+			opt.value = sample.length-1
+			opt.textContent = json.namasimpan
+			inpopen.value = ''
+		}
+		
+		let muatsample = json=>{
+			//inpopen.textContent = bukafile.files[0].name
+			lih(json)
+			
+			inpsave.value = json.namasimpan
+			inpexport.value = json.namaexport
+			m3.copy(matcam,json.matcam,)
+			
+			//nodes
+			let arr_node = []
+			let arr_par = Array(json.nodes.length).fill(null)
+			for(let naA in json.nodes){
+				let nodesrc = json.nodes[naA = +naA]
+				let node = bikinnode(arr_par[naA])
+				arr_node.push(node)
+				for(let vaB of nodesrc.children){
+					if(arr_par[vaB] !== null){
+						let err = 'ada error: recursive child/multiple parent'
+						return alert(err)
+					}
+					arr_par[vaB] = node
+				}
+				
+				//prop
+				m3.copy(node.matlok,nodesrc.matlok,)
+				node.nama = 
+				node.div_span.textContent = nodesrc.name
+				node.fill = nodesrc.fill
+				node.stroke =
+				node.div_span.style.color = 
+				node.txdata.style.color = nodesrc.stroke
+				node.order = nodesrc.order
+				node.SHname = nodesrc.SHname
+				node.SHfill = nodesrc.SHfill
+				node.SHstroke = nodesrc.SHstroke
+				node.SHchildren = nodesrc.SHchildren
+				node.txdata.textContent = nodesrc.data
+				updnodeani(node)
+			}
+			
+			//ani
+			labelvalue = json.label
+			for(let assi of json.animasi){
+				let assinama = bikinassi()
+				anisetnode(arr_node[assi.node]?.anirefnama??cla(assi.node)[0],assinama,)
+				
+				for(let matrixsrc of assi.matrix){
+					let matrix = bikinmatrix(assinama)
+					anisetnode(arr_node[matrixsrc.node]?.anirefnama??cla(matrixsrc.node)[0],matrix,)
+					matrix.setAttribute('opetex',
+						que(`.operation [value="${matrixsrc.operasi}"]`)[0].getAttribute('opetex')
+					,)
+					let aniobj = carianiobj(matrix)
+					aniobj.operasi	= matrixsrc.operasi
+					aniobj.usechi	= matrixsrc.usechi
+					aniobj.playing	= matrixsrc.playing
+					aniobj.start	= matrixsrc.start
+					aniobj.end	= matrixsrc.end
+					aniobj.time	= matrixsrc.time
+					aniobj.speed	= matrixsrc.speed
+					aniobj.label	= matrixsrc.label
+				}
+			}
+		}
 		let inpsave = cla('inpsave')[0]
 		let inpexport = cla('inpexport')[0]
+		let help = cla('help')[0]
+		help.addEventListener('click',e=>{
+			let c = e.currentTarget.classList
+			c.toggle('checked')
+			htmlUI4.classList[
+				c.contains('checked')?'remove':'add'
+			]('hilang')
+			clearInterval(kelip)
+			help.style.border = ''
+		})
+		let kelip = setInterval(()=>{
+			help.style.border = `.8px solid rgba(
+				${Math.random()*256},
+				${Math.random()*256},
+				${Math.random()*256},
+				1
+			)`
+		},11,)
 	}
 	let htmlUI3 = cla('htmlUI3')[0]
 	htmlUI3.addEventListener('click',e=>{adaaniklik = true})
@@ -1251,9 +1304,10 @@ let rk = rantaikode
 		let close3 = cla('close')[2]
 		close3.addEventListener('click',e=>pindahhlm('htmlUI0baaru'))
 		let deleteani = cla('deleteani')[0]
-		deleteani.addEventListener('dblclick',e=>{
-			lih('mengHapus:')
+		deleteani.addEventListener('click',e=>{
 			let anidipilih = lih(cla('anidipilih')[0])
+			if(!anidipilih || !confirm('Assignment/matrix will be deleted. Continue')){return}
+			lih('mengHapus:')
 			for(let naA in arr_assinama){
 				let vaA = arr_assinama[naA = +naA]
 				if(vaA.ele === anidipilih){
@@ -1618,7 +1672,7 @@ let rk = rantaikode
 		let txinsertnode = cla('txinsertnode')[0]
 		txinsertnode.addEventListener('click',fclick_insertnode,)
 		let txdeletenode = cla('txdeletenode')[0]
-		txdeletenode.addEventListener('dblclick',fclick_deletenode,)
+		txdeletenode.addEventListener('click',fclick_deletenode,)
 		let txeditnode = cla('txeditnode')[0]
 		txeditnode.addEventListener('click',e=>nodedipilih?edit():0,)
 		edit = ()=>{
@@ -2317,4 +2371,119 @@ let rk = rantaikode
 	resize_editnama()
 	canv.dispatchEvent(new MouseEvent('mousedown'))
 	requestAnimationFrame(lukis)
+	let htmlUI4 = que('.htmlUI4')[0]
+	let htmlUI4_x//delta
+	let htmlUI4_y//delta
+	let htmlUI4_x0//hasil
+	let htmlUI4_y0//hasil
+	let htmlUI4_gerak = false
+	addEventListener('mousedown',e=>{
+		if(e.target !== judulhelp){return}
+		htmlUI4_x = e.clientX-htmlUI4.offsetLeft
+		htmlUI4_y = e.clientY-htmlUI4.offsetTop
+		htmlUI4_gerak = true
+	},)
+	addEventListener('mousemove',e=>{
+		if(!htmlUI4_gerak){return}
+		htmlUI4_x0 = e.clientX-htmlUI4_x
+		htmlUI4_y0 = e.clientY-htmlUI4_y
+		f_htmlUI4_batas()
+	},)
+	let f_htmlUI4_batas = ()=>{
+		let s = htmlUI4.style
+		let x = Math.max(0,htmlUI4_x0,)
+		let y = Math.max(0,htmlUI4_y0,)
+		x = Math.min(x,innerWidth-judulhelp.clientWidth,)
+		y = Math.min(y,innerHeight-judulhelp.clientHeight,)
+		s.left = x+'px'
+		s.top = y+'px'
+	}
+	addEventListener('resize',f_htmlUI4_batas,)
+	addEventListener('mouseup',e=>{
+		htmlUI4_gerak = false
+	},)
+	let helptunjukele = e=>{
+		if(e.type === 'mouseenter'){
+			tunjukkelip = ru.que(
+				e.currentTarget.getAttribute('tunjuk')
+			)
+		}else{
+			/*
+			tunjukkelip.style.background = ''
+			tunjukkelip = null
+			*/
+			for(let ele of tunjukkelip){
+				ele.style.background = ''
+			}
+			tunjukkelip = null
+		}
+	}
+	for(let ele of que('[tunjuk]')){
+		ele.addEventListener('mouseenter',helptunjukele,)
+		ele.addEventListener('mouseleave',helptunjukele,)
+	}
+	let tunjukkelip = null //ele
+	setInterval(()=>{
+		if(!tunjukkelip){return}
+		/*
+		tunjukkelip.style.background = `rgba(
+			${Math.random()*256},
+			${Math.random()*256},
+			${Math.random()*256},
+			1
+		)`
+		*/
+		for(let ele of tunjukkelip){
+			ele.style.background = `rgba(
+				${Math.random()*256},
+				${Math.random()*256},
+				${Math.random()*256},
+				1
+			)`	
+		}
+	},44,)
+		let judulhelp = que('.judulhelp')[0]
+		let pilihhelp = que('.pilihhelp')[0]
+		pilihhelp.addEventListener('change',e=>{
+			let cur = e.currentTarget
+			que('.helptampil')[0]?.classList.remove('helptampil')
+			let helptampil = que(`.htmlUI4 .helpcontent > [judul="${cur.value}"]`)[0]
+			helptampil.classList.add('helptampil')
+			
+			stepmax.textContent = helptampil.children.length
+			steppos = 1
+			updstep()
+		})
+		let helpkekiri = que('.helpkekiri')[0]
+		let stepini = que('.stepini')[0]
+		let stepmax = que('.stepmax')[0]
+		let helpkekanan = que('.helpkekanan')[0]
+		
+		let steppos = 1
+		
+		helpkekiri.addEventListener('click',e=>{
+			steppos--
+			updstep()
+		})
+		helpkekanan.addEventListener('click',e=>{
+			steppos++
+			updstep()
+		})
+		let updstep = ()=>{
+			que('.steptampil')[0]?.classList.remove('steptampil')
+			let c = que('.helptampil')[0]?.children
+			if(!c){return}
+			steppos = Math.max(1,steppos,)
+			steppos = Math.min(steppos,c.length,)
+			c[steppos-1].classList.add('steptampil')
+			stepini.textContent = steppos
+		}
+		let helpcontent = que('.helpcontent')[0]
+		
+		for(let ele of helpcontent.children){
+			let op = document.createElement('option')
+			pilihhelp.appendChild(op)
+			op.textContent = ele.getAttribute('judul')
+		}
+		pilihhelp.value = ''
 }

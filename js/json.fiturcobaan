@@ -24,7 +24,7 @@
 					"playing": true,
 					"start": 1,
 					"end": 5,
-					"time": -12735.366600709276,
+					"time": -366433.84396158473,
 					"speed": -5.83636363636365,
 					"label": "mylabel"
 				}
@@ -38,9 +38,9 @@
 				1,
 				2,
 				3,
-				14,
-				15,
-				16
+				22,
+				23,
+				24
 			],
 			"matlok": [
 				1,
@@ -49,8 +49,8 @@
 				0,
 				1,
 				0,
-				-115.69998931884766,
-				154.6999969482422,
+				114.66281127929688,
+				185.34609985351562,
 				1
 			],
 			"fill": "#ffffff66",
@@ -88,7 +88,7 @@
 			"_idxini_": "1_segera_dHapus_"
 		},
 		{
-			"name": "gear",
+			"name": "fungsi gear",
 			"children": [],
 			"matlok": [
 				1,
@@ -115,15 +115,8 @@
 			"name": "panel fiturcobaan",
 			"children": [
 				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13
+				15,
+				16
 			],
 			"matlok": [
 				1,
@@ -143,8 +136,43 @@
 			"SHfill": true,
 			"SHname": true,
 			"order": 4.522522522522527,
-			"data": "\tlet pfc = document.createElement('div')//panel fiturcobaan\n",
+			"data": "\tlet pfc = document.createElement('div')//panel fiturcobaan\n\tlet pfcdrag = document.createElement('div')\n",
 			"_idxini_": "3_segera_dHapus_"
+		},
+		{
+			"name": "[[pewarna]]",
+			"children": [
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(128.9542388646035,243.12958061107366,176.14168170935017,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 4.59459459459461,
+			"data": "",
+			"_idxini_": "4_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -168,7 +196,7 @@
 			"SHname": true,
 			"order": 5.225225225225233,
 			"data": "\tdoc",
-			"_idxini_": "4_segera_dHapus_"
+			"_idxini_": "5_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -192,7 +220,7 @@
 			"SHname": true,
 			"order": 6.432432432432452,
 			"data": "ume",
-			"_idxini_": "5_segera_dHapus_"
+			"_idxini_": "6_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -216,7 +244,7 @@
 			"SHname": true,
 			"order": 7.954954954954976,
 			"data": "nt.",
-			"_idxini_": "6_segera_dHapus_"
+			"_idxini_": "7_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -240,7 +268,7 @@
 			"SHname": true,
 			"order": 8.792792792792818,
 			"data": "bod",
-			"_idxini_": "7_segera_dHapus_"
+			"_idxini_": "8_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -264,7 +292,7 @@
 			"SHname": true,
 			"order": 9.558558558558586,
 			"data": "y.a",
-			"_idxini_": "8_segera_dHapus_"
+			"_idxini_": "9_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -288,7 +316,7 @@
 			"SHname": true,
 			"order": 10.585585585585623,
 			"data": "ppe",
-			"_idxini_": "9_segera_dHapus_"
+			"_idxini_": "10_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -312,7 +340,7 @@
 			"SHname": true,
 			"order": 11.531531531531588,
 			"data": "ndC",
-			"_idxini_": "10_segera_dHapus_"
+			"_idxini_": "11_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -336,7 +364,7 @@
 			"SHname": true,
 			"order": 12.594594594594653,
 			"data": "hil",
-			"_idxini_": "11_segera_dHapus_"
+			"_idxini_": "12_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -360,7 +388,7 @@
 			"SHname": true,
 			"order": 13.540540540540599,
 			"data": "d(p",
-			"_idxini_": "12_segera_dHapus_"
+			"_idxini_": "13_segera_dHapus_"
 		},
 		{
 			"name": "warnaku",
@@ -383,11 +411,11 @@
 			"SHfill": true,
 			"SHname": true,
 			"order": 14.603603603603675,
-			"data": "fc)",
-			"_idxini_": "13_segera_dHapus_"
+			"data": "fc)\n\tpfc.appendChild(pfcdrag)\n\tlet mousetext = que('.mousetext')[0]\n\tlet bikindesc = (ele,namaclass,tex,)=>{\n\t\tlet texele = document.createElement('div')\n\t\tmousetext.appendChild(texele)\n\t\ttexele.classList.add(namaclass)\n\t\ttexele.textContent = tex\n\t\tele.setAttribute('descr',namaclass,)\n\t\treturn ele\n\t}\n",
+			"_idxini_": "14_segera_dHapus_"
 		},
 		{
-			"name": "nodebaru",
+			"name": "pfcdrag (sampe sini)",
 			"children": [],
 			"matlok": [
 				1,
@@ -401,14 +429,165 @@
 				1
 			],
 			"fill": "#ffffff66",
-			"stroke": "grey",
+			"stroke": "cyan",
 			"SHchildren": true,
 			"SHstroke": true,
 			"SHfill": true,
 			"SHname": true,
 			"order": 5.540540540540561,
-			"data": "\t//nodebaru\n",
-			"_idxini_": "14_segera_dHapus_"
+			"data": "\tpfc.classList.add('pfc')\n\tpfcdrag.classList.add('pfcdrag')\n\tpfcdrag.textContent = 'Fitur Cobaan'\n\t\n\tlet pfcgeser = false\n\tlet x0 = 0\n\tlet y0 = 0\n\tlet x1 = Number.MAX_SAFE_INTEGER\n\tlet y1 = Number.MAX_SAFE_INTEGER\n\taddEventListener('mousedown',e=>{\n\t\tif(e.target !== pfcdrag){return}\n\t\tpfcgeser = true\n\t\tx0 = e.clientX-pfc.offsetLeft\n\t\ty0 = e.clientY-pfc.offsetTop\n\t})\n\taddEventListener('mousemove',e=>{\n\t\tif(!pfcgeser){return}\n\t\tx1 = e.clientX-x0\n\t\ty1 = e.clientY-y0\n\t\tf_pfcbatas()\n\t})\n\taddEventListener('mouseup',e=>{\n\t\tpfcgeser = false\n\t})\n\tlet f_pfcbatas = ()=>{\n\t\tlet x = Math.min(x1,innerWidth-pfcdrag.clientWidth,)\n\t\tlet y = Math.min(y1,innerHeight-pfcdrag.clientHeight,)\n\t\tx = Math.max(x,0,)\n\t\ty = Math.max(y,0,)\n\t\tpfc.style.left = x+'px'\n\t\tpfc.style.top = y+'px'\n\t}\n\taddEventListener('resize',f_pfcbatas,)\n\taddEventListener('load',f_pfcbatas,)\n\t//sampe sini, bikin div untuk tools, agar pfcdrag ga ikut kena scroll\n",
+			"_idxini_": "15_segera_dHapus_"
+		},
+		{
+			"name": "pfctools",
+			"children": [
+				17,
+				18
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(149.08444258384804,126.14909825705647,195.93163230869678,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 6.54054054054056,
+			"data": "\tlet pfctools = document.createElement('div')\n\tpfc.appendChild(pfctools)\n\tpfctools.classList.add('pfctools')\n",
+			"_idxini_": "16_segera_dHapus_"
+		},
+		{
+			"name": "judulgear",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(208.3814499623207,109.15611396876557,129.442572619509,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 5.459459459459478,
+			"data": "\tlet judulgear = document.createElement('div')\n\tpfctools.appendChild(judulgear)\n\tjudulgear.textContent = 'Gear'\n\tjudulgear.classList.add('menusubjudul')\n",
+			"_idxini_": "17_segera_dHapus_"
+		},
+		{
+			"name": "flex0",
+			"children": [
+				19,
+				20,
+				21
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(118.32327697448324,194.85070300790727,154.4269594709923,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 6.5000000000000195,
+			"data": "\tlet flex0 = document.createElement('div')\n\tpfctools.appendChild(flex0)\n\tflex0.classList.add('pfcflex')\n",
+			"_idxini_": "18_segera_dHapus_"
+		},
+		{
+			"name": "inpgear_n",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(109.6285963295449,247.42401750712227,139.56952510957365,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 7.540540540540561,
+			"data": "\tlet inpgear_n = document.createElement('input')\n\tflex0.appendChild(inpgear_n)\n\tinpgear_n.type = 'number'\n\tinpgear_n.step = 1\n\tinpgear_n.value = 8\n\tinpgear_n.classList.add('inpgear_n')\n\tbikindesc(inpgear_n,'mousengigi','Jumlah gigi',)\n",
+			"_idxini_": "19_segera_dHapus_"
+		},
+		{
+			"name": "inpgear_rad",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "yellow",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 8.549549549549571,
+			"data": "\tlet inpgear_rad = document.createElement('input')\n\tflex0.appendChild(inpgear_rad)\n\tinpgear_rad.type = 'number'\n\tinpgear_rad.value = 111\n\tinpgear_rad.classList.add('inpgear_rad')\n\tbikindesc(inpgear_rad,'mouseradgigi','Radius lubang',)\n",
+			"_idxini_": "20_segera_dHapus_"
+		},
+		{
+			"name": "gearbutton",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(129.8981816233537,207.37701084376914,123.85795311160935,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 9.549549549549571,
+			"data": "\tlet gearbutton = document.createElement('button')\n\tflex0.appendChild(gearbutton)\n\tgearbutton.textContent = 'Bikin'\n\tgearbutton.classList.add('gearbutton')\n\tgearbutton.addEventListener('click',e=>{\n\t\tbikingear(\n\t\t\tMath.floor(inpgear_n.value),\n\t\t\tinpgear_rad.value,\n\t\t)\n\t},)\n",
+			"_idxini_": "21_segera_dHapus_"
 		},
 		{
 			"name": "nodebaru",
@@ -432,7 +611,31 @@
 			"SHname": true,
 			"order": 6.540540540540557,
 			"data": "\t//nodebaru\n",
-			"_idxini_": "15_segera_dHapus_"
+			"_idxini_": "22_segera_dHapus_"
+		},
+		{
+			"name": "nodebaru",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				115.69998931884766,
+				-154.6999969482422,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "grey",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 7.486486486486505,
+			"data": "\t//nodebaru\n",
+			"_idxini_": "23_segera_dHapus_"
 		},
 		{
 			"name": "akhir",
@@ -456,7 +659,7 @@
 			"SHname": true,
 			"order": 99999999,
 			"data": "}\n\n\n\n\n\n\n\n//============================",
-			"_idxini_": "16_segera_dHapus_"
+			"_idxini_": "24_segera_dHapus_"
 		}
 	]
 }

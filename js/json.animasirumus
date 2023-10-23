@@ -1,0 +1,438 @@
+{
+	"namasimpan": "json.animasirumus",
+	"namaexport": "",
+	"label": "mylabel anotherlabel",
+	"matcam": [
+		0.38379308581352234,
+		0.0663435161113739,
+		0,
+		-0.0663435161113739,
+		0.38379308581352234,
+		0,
+		0,
+		0,
+		1
+	],
+	"animasi": [
+		{
+			"node": 1,
+			"matrix": [
+				{
+					"node": 1,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 3,
+					"time": 160.99789900000025,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 5,
+			"matrix": [
+				{
+					"node": 5,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 3,
+					"time": 160.99789900000025,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 8,
+			"matrix": [
+				{
+					"node": 8,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 3,
+					"time": 160.99789900000025,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 11,
+			"matrix": [
+				{
+					"node": 11,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 3,
+					"time": 160.99789900000025,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"name": "tampil",
+			"children": [
+				1,
+				4,
+				5,
+				8,
+				11
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(122.89427395389697,250.74805135669388,148.73682624683886,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 4,
+			"data": "testeesss 123\nbikin animasi doang,\nga butuuh export",
+			"_idxini_": 0
+		},
+		{
+			"name": "F",
+			"children": [
+				2,
+				3
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				29.936969757080078,
+				-9.978989601135254,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(125.6242304536699,254.92524166265235,244.43961153817878,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 0,
+			"data": "|----|",
+			"_idxini_": "1_segera_dHapus_"
+		},
+		{
+			"name": "F_0",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(227.73377868384415,213.36276028799867,153.08459910961767,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "2_segera_dHapus_"
+		},
+		{
+			"name": "F_1",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				30,
+				-10,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(161.88874443688252,228.89262603968112,120.77596992311774,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "3_segera_dHapus_"
+		},
+		{
+			"name": "=",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				15,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(184.60961977961347,112.61173285344111,172.29776745726946,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "4_segera_dHapus_"
+		},
+		{
+			"name": "m",
+			"children": [
+				6,
+				7
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				30,
+				9.978989601135254,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(147.17626693700907,220.01623791844338,154.18301970533406,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "5_segera_dHapus_"
+		},
+		{
+			"name": "m_0",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				30,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(234.30781158664408,182.58355370225598,244.95628692450347,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "6_segera_dHapus_"
+		},
+		{
+			"name": "m_1",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				30,
+				10,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(168.3743737675685,105.9160591945975,161.6995367341117,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "7_segera_dHapus_"
+		},
+		{
+			"name": "a",
+			"children": [
+				9,
+				10
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0.09454499930143356,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(169.69616271272315,189.36692745671976,252.40059572039897,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 3,
+			"data": "|----|",
+			"_idxini_": "8_segera_dHapus_"
+		},
+		{
+			"name": "a_0",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				45,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(228.13169054190809,162.53257817233168,224.37224789659373,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "9_segera_dHapus_"
+		},
+		{
+			"name": "a_1",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "cyan",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "10_segera_dHapus_"
+		},
+		{
+			"name": "_",
+			"children": [
+				12,
+				13
+			],
+			"matlok": [
+				0.9978989958763123,
+				0,
+				0,
+				0,
+				0.9978989958763123,
+				0,
+				30,
+				-10,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(143.11314624718727,226.87536847077774,123.72377068096243,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 5,
+			"data": "|----|",
+			"_idxini_": "11_segera_dHapus_"
+		},
+		{
+			"name": "__0",
+			"children": [],
+			"matlok": [
+				0,
+				0,
+				0,
+				0,
+				0,
+				0,
+				30,
+				-10,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(240.71230613454327,145.80364511232546,127.09396833433675,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "12_segera_dHapus_"
+		},
+		{
+			"name": "__1",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				30,
+				-10,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(181.17611646188772,247.81770789345452,205.65537131921107,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": false,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "13_segera_dHapus_"
+		}
+	]
+}

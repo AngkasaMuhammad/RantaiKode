@@ -50,4 +50,19 @@ let ru = {}//rumus
 		}
 	}
 	ru.que = str=>document.querySelectorAll(str)
+	ru.cariurl = (href,namapath,)=>{
+		href = new URL(href)
+		namapath = namapath.split('/').filter(a=>a)
+		let hrefhasil = href.pathname.split('/').filter(a=>a)
+		hrefhasil.unshift(href.origin)
+		hrefhasil.pop()
+		for(let str of namapath){
+			if(str === '..'){
+				hrefhasil.pop()
+			}else{
+				hrefhasil.push(str)
+			}
+		}
+		return hrefhasil.join('/')
+	}
 })()
