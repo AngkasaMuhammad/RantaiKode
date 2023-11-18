@@ -255,6 +255,10 @@ let rk = rantaikode
 		}
 		kli = null
 	})
+	addEventListener('scroll',e=>{
+		document.documentElement.scrollTop = 
+		document.documentElement.scrollLeft = 0
+	})
 	let m3mix0 = m3.create()
 	let m3mix1 = m3.create()
 	let m3mix = (out,a,b,w,)=>{
@@ -721,10 +725,10 @@ let rk = rantaikode
 					arrnode.splice(naA+naB+1,0,vaB,)
 					arrclone.splice(naA+naB+1,0,bikinnode(clone),)
 				}
+				updnodeani(clone)
 			}
 			urutkan(nodedipilih.parent)
 			pilihnode(arrclone[0])
-			updnodeani()
 		}
 		let copynode = cla('copynode')[0]
 		copynode.addEventListener('click',f_copynode,)
@@ -1020,12 +1024,19 @@ let rk = rantaikode
 			}
 			inpopen.value = ''
 		})
+		inpopen.addEventListener('click',e=>{
+			clearInterval(inpopenkelip);inpopen.style.border = ''
+		})
+		setTimeout(e=>{
+			clearInterval(inpopenkelip);inpopen.style.border = ''
+		},1111,)
 		inpopen.value = ''
 		sample = []
 		
 		let restext = res=>res.text()
 		
 		let samplehref
+		let samplewelcome = null
 		fetch("js/samples.json").
 		then(res=>{
 			samplehref = res.url
@@ -1047,7 +1058,23 @@ let rk = rantaikode
 			opt.value = sample.length-1
 			opt.textContent = json.namasimpan
 			inpopen.value = ''
+			clearInterval(inpopenkelip);inpopen.style.border = ''
+			inpopenkelip = setInterval(()=>{
+				inpopen.style.border = `2px solid rgba(
+					${Math.random()*256},
+					${Math.random()*256},
+					${Math.random()*256},
+					1
+				)`
+			},111,)
+			if(
+				!samplewelcome && 
+				(json.namasimpan === 'json.welcome')
+			){
+				muatsample(samplewelcome = json)//sampe sini
+			}
 		}
+		let inpopenkelip
 		
 		let muatsample = json=>{
 			//inpopen.textContent = bukafile.files[0].name
@@ -1122,10 +1149,10 @@ let rk = rantaikode
 			htmlUI4.classList[
 				c.contains('checked')?'remove':'add'
 			]('hilang')
-			clearInterval(kelip)
+			clearInterval(helpkelip)
 			help.style.border = ''
 		})
-		let kelip = setInterval(()=>{
+		let helpkelip = setInterval(()=>{
 			help.style.border = `.8px solid rgba(
 				${Math.random()*256},
 				${Math.random()*256},
@@ -1133,6 +1160,31 @@ let rk = rantaikode
 				1
 			)`
 		},11,)
+		let newproject = que('.newproject')[0]
+		newproject.addEventListener('click',e=>{
+			if(!confirm('Some changes may not be saved.')){return}
+			lih('ookkk')
+			
+			ru.habisarr(rk.global.children[0].group)
+			ru.habisarr(arr_assinama)
+			let a = ru.que(`
+				.hlmlist > div,
+				.hlmtext > span > span,
+				.matrixlist > div,
+				.aniref,
+				.gbtd > tr
+			`)
+			for(let ele of a){
+				ele.remove()
+			}
+			m3.identity(matcam)
+			nodedipilih = null
+			inpsave.value = 
+			inpexport.value = ''
+			
+			updtrf()
+			updlain()
+		})
 	}
 	let htmlUI3 = cla('htmlUI3')[0]
 	htmlUI3.addEventListener('click',e=>{adaaniklik = true})
@@ -1590,9 +1642,9 @@ let rk = rantaikode
 		let speed = cla('speed')[0]
 		poi(speed)
 		eveges.speed = e=>{
-			let mov = e.movementX/55
+			let mov = e.movementX/111
 			if(labelcheck.classList.contains('checked')){
-				itermatrixlabel(f_labelspeed,mov,)
+				itermatrixlabel(f_speed,mov,)
 				return
 			}
 			
@@ -1602,11 +1654,11 @@ let rk = rantaikode
 				!aniobj ||
 				!aniobj.hasOwnProperty('playing')
 			){return}
-			inpspeed.value = (aniobj.speed += mov)
+			inpspeed.value = f_speed(aniobj,mov,)//(aniobj.speed *= 2**mov)
 		}
-		let f_labelspeed = (matrix,mov,)=>{
-			matrix.speed += mov
-		}
+		let f_speed = (matrix,mov,)=>matrix.speed *= 2**mov
+			//matrix.speed += mov
+		
 	let mousetext = cla('mousetext')[0]
 	addEventListener('mousemove',e=>{
 		mousetext.style.left = (e.clientX+22)+'px'
@@ -1909,11 +1961,10 @@ let rk = rantaikode
 				}
 				if(assinama.matrix.length){
 					let node = assinama.node
-					//matcam saat ani nodeid = -2
 					m3.copy(node?.matlok??matcam,mp0,)
 					if(
-						(nodedipilih === matcam) ||
-						(nodedipilih === node)
+						(node === matcam) ||
+						(node === nodedipilih)
 					){
 						updtrf()
 					}
@@ -2203,6 +2254,29 @@ let rk = rantaikode
 	
 	let hlmtextspan = cla('hlmtext')[0].firstElementChild
 	pilihnode = node=>node.feve('turun',node,0,)//param terakhir 'dt' di sini ga dipake
+	let arr_stroke = [
+		'#ff5e4f',
+		'#ff974f',
+		'#ffd64f',
+		'#f8ff4f',
+		'#bfff4f',
+		'#9bff4f',
+		'#6bff4f',
+		'#4fff75',
+		'#4fffbd',
+		'#4ffff0',
+		'#4fd5ff',
+		'#4fabff',
+		'#4f75ff',
+		'#564fff',
+		'#834fff',
+		'#bc4fff',
+		'#e04fff',
+		'#ff4ffa',
+		'#ff4fbb',
+		'#ff4f8e'
+	]
+	
 	let klikdieditor = e=>{
 		if(cla('diedit')[0]){return}
 		let span = e.currentTarget
@@ -2238,13 +2312,16 @@ let rk = rantaikode
 		;(par = par||grid).group.push(node)
 		
 		node.nodeid = namaunik
-		node.fill = '#ffffff66'
+		node.fill = '#0000ff55'
+		/*
 		node.stroke = ru.rgba(
 			Math.random()*155+100,
 			Math.random()*155+100,
 			Math.random()*155+100,
 			1,
 		)
+		*/
+		node.stroke = arr_stroke[ru.acak(arr_stroke.length)]
 		node.SHname =
 		node.SHfill =
 		node.SHstroke =

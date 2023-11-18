@@ -1,0 +1,193 @@
+{
+	"namasimpan": "json.kotakkotak",
+	"namaexport": "kotakkotak.html",
+	"label": "coba",
+	"matcam": [
+		1,
+		0,
+		0,
+		0,
+		1,
+		0,
+		0,
+		0,
+		1
+	],
+	"animasi": [],
+	"nodes": [
+		{
+			"name": "kotakkotak.html animasi kotak berwarna",
+			"children": [
+				1,
+				2,
+				3,
+				4,
+				5
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "white",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 0,
+			"data": "",
+			"_idxini_": 0
+		},
+		{
+			"name": "html atas",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				80.60002136230469,
+				52.00000762939453,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "blue",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": -1.0810810810810814,
+			"data": "\n<!DOCTYPE\thtml>\n<html>\n\t<head>\n\t\t<title>\n\t\t\tKotak kotak\n\t\t</title>\n\t\t<style>\n\t\t\tbody{\n\t\t\t\tbackground-color:#007700;\n\t\t\t\tcolor:white;\n\t\t\t\tfont-family:Verdana;\n\t\t\t}\n\t\t\tcanvas{\n\t\t\t\toutline:2px solid cyan;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<canvas></canvas>\n\t\t<script>\n//============\n\n",
+			"_idxini_": "1_segera_dHapus_"
+		},
+		{
+			"name": "use strict",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				183.30001831054688,
+				97.49996948242188,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 0.09009009009009004,
+			"data": "\n\"use strict\"\n\n",
+			"_idxini_": "2_segera_dHapus_"
+		},
+		{
+			"name": "bikin canvas",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				198.8999481201172,
+				129.9999237060547,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ff974f",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "let canv = document.querySelector('canvas')\ncanv.width = 600\ncanv.height = 420\nlet cx = canv.getContext('2d')\n",
+			"_idxini_": "3_segera_dHapus_"
+		},
+		{
+			"name": "animasi kotak",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				205.40008544921875,
+				161.19993591308594,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#4fabff",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 2,
+			"data": "\nsetInterval(()=>{\n\tcx.fillStyle = `rgba(\n\t\t${Math.random()*255},\n\t\t${Math.random()*255},\n\t\t${Math.random()*255},\n\t\t${Math.random()}\n\t)`\n\tcx.fillRect(\n\t\tcanv.width*Math.random(),\n\t\tcanv.height*Math.random(),\n\t\tcanv.width*Math.random(),\n\t\tcanv.height*Math.random(),\n\t)\n},111,)\n",
+			"_idxini_": "4_segera_dHapus_"
+		},
+		{
+			"name": "html bawah",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				81.90001678466797,
+				218.4001007080078,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "blue",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 3,
+			"data": "\n\n\n//============\n\t\t</script>\n\t</body>\n</html>\n",
+			"_idxini_": "5_segera_dHapus_"
+		},
+		{
+			"name": "Silakan langsung export",
+			"children": [],
+			"matlok": [
+				1.0882006883621216,
+				0.5022789239883423,
+				0,
+				-1.006710410118103,
+				0.8553709983825684,
+				0,
+				-73.8222427368164,
+				206.4681396484375,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "",
+			"_idxini_": 6
+		}
+	]
+}

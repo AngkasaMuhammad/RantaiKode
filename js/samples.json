@@ -1,5 +1,10 @@
 [
-	"json.alanbrekermath",
-	"json.fiturcobaan",
-	"json.animasirumus"
+	"../contohproject/json.welcome",
+	"../contohproject/json.alanbrekermath",
+	"../contohproject/json.fiturcobaan",
+	"../contohproject/json.animasirumus",
+	"../contohproject/json.tatasurya",
+	"../contohproject/json.tatasurya1",
+	"../contohproject/json.pipaair",
+	"../contohproject/json.kotakkotak"
 ]

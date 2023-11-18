@@ -1,0 +1,52 @@
+
+<!DOCTYPE	html>
+<html>
+	<head>
+		<title>
+			Kotak kotak
+		</title>
+		<style>
+			body{
+				background-color:#007700;
+				color:white;
+				font-family:Verdana;
+			}
+			canvas{
+				outline:2px solid cyan;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas></canvas>
+		<script>
+//============
+
+
+"use strict"
+
+let canv = document.querySelector('canvas')
+canv.width = 600
+canv.height = 420
+let cx = canv.getContext('2d')
+
+setInterval(()=>{
+	cx.fillStyle = `rgba(
+		${Math.random()*255},
+		${Math.random()*255},
+		${Math.random()*255},
+		${Math.random()}
+	)`
+	cx.fillRect(
+		canv.width*Math.random(),
+		canv.height*Math.random(),
+		canv.width*Math.random(),
+		canv.height*Math.random(),
+	)
+},111,)
+
+
+
+//============
+		</script>
+	</body>
+</html>

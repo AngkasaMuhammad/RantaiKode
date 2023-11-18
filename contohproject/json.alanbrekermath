@@ -1,0 +1,419 @@
+{
+	"namasimpan": "json.alanbrekermath",
+	"namaexport": "terserah.txt",
+	"label": "maju sek",
+	"matcam": [
+		0.653599739074707,
+		0.07689964026212692,
+		0,
+		-0.07689964026212692,
+		0.653599739074707,
+		0,
+		197.3239288330078,
+		-23.852340698242188,
+		1
+	],
+	"animasi": [
+		{
+			"node": 1,
+			"matrix": [
+				{
+					"node": 4,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 4,
+					"time": 58204.517556424806,
+					"speed": 3.8883861690704418,
+					"label": "mylabel"
+				},
+				{
+					"node": "identity",
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 0,
+			"matrix": [
+				{
+					"node": 0,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 1,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				},
+				{
+					"node": 10,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "maju"
+				}
+			]
+		},
+		{
+			"node": "identity",
+			"matrix": [
+				{
+					"node": 0,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 5,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				},
+				{
+					"node": 6,
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 0.678980215165917,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": "identity",
+			"matrix": [
+				{
+					"node": "camera",
+					"operasi": "none",
+					"usechi": false,
+					"playing": false,
+					"start": 0,
+					"end": 0,
+					"time": -2.836363636363637,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": "identity",
+			"matrix": []
+		}
+	],
+	"nodes": [
+		{
+			"name": "",
+			"children": [
+				1,
+				2,
+				3
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				8.799513816833496,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(110.93144381024915,244.33013134616357,110.01358848000741,1)",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": 0
+		},
+		{
+			"name": "e",
+			"children": [],
+			"matlok": [
+				0.9715120792388916,
+				0.27219143509864807,
+				0,
+				-0.16934174299240112,
+				1.2685483694076538,
+				0,
+				0,
+				-2.018470287322998,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(182.8251817569698,206.29939417998963,103.83730471272573,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 0,
+			"data": "|----|",
+			"_idxini_": "1_segera_dHapus_"
+		},
+		{
+			"name": "iπ",
+			"children": [],
+			"matlok": [
+				0.4639018177986145,
+				0,
+				0,
+				0,
+				0.4639018177986145,
+				0,
+				12.061445236206055,
+				-11.458373069763184,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "yellow",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "2_segera_dHapus_"
+		},
+		{
+			"name": "",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "cyan",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 5,
+			"data": "cameraku",
+			"_idxini_": "3_segera_dHapus_"
+		},
+		{
+			"name": "gerak e",
+			"children": [
+				5,
+				6,
+				7,
+				8,
+				9
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-106.59990692138672,
+				-22.099994659423828,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(209.09946815598175,106.09828568563911,176.17010040665363,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": 4
+		},
+		{
+			"name": "awal",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 0,
+			"data": "|----|",
+			"_idxini_": "5_segera_dHapus_"
+		},
+		{
+			"name": "lompat",
+			"children": [],
+			"matlok": [
+				0.9449569582939148,
+				0.5259164571762085,
+				0,
+				-0.3271947503089905,
+				1.5188775062561035,
+				0,
+				0,
+				-3.9000003337860107,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 1,
+			"data": "|----|",
+			"_idxini_": "6_segera_dHapus_"
+		},
+		{
+			"name": "terbang",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				-10.40000057220459,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 2,
+			"data": "|----|",
+			"_idxini_": "7_segera_dHapus_"
+		},
+		{
+			"name": "turun",
+			"children": [],
+			"matlok": [
+				0.9747437238693237,
+				-0.2233259379863739,
+				0,
+				0.2233259379863739,
+				0.9747437238693237,
+				0,
+				0,
+				-3.8999998569488525,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 3,
+			"data": "|----|",
+			"_idxini_": "8_segera_dHapus_"
+		},
+		{
+			"name": "ke awal",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(163.34840069534556,157.6110038644631,125.8512154438099,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 4,
+			"data": "|----|",
+			"_idxini_": "9_segera_dHapus_"
+		},
+		{
+			"name": "maju",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0.699999988079071,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(230.207979782634,238.76975506027637,208.69319838791563,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 3,
+			"data": "|----|",
+			"_idxini_": 10
+		},
+		{
+			"name": "turundikit",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				324.299072265625,
+				0,
+				1
+			],
+			"fill": "#ffffff66",
+			"stroke": "rgba(145.30302593412736,248.0797887580558,110.87466971699006,1)",
+			"SHchildren": true,
+			"SHstroke": true,
+			"SHfill": true,
+			"SHname": true,
+			"order": 4,
+			"data": "|----|",
+			"_idxini_": 11
+		}
+	]
+}
