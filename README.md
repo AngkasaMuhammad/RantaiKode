@@ -14,7 +14,7 @@ Silakan kunjungi [Rantai Kode v0](https://angkasamuhammad.github.io/RantaiKode/R
 ### 3. Halaman Sampah
 ![Halaman Sampah](img/Halaman%20Sampah.png) 
 
-### 4. Halaman 
+### 4. Halaman Animasi
 ![Halaman Animasi](img/Halaman%20Animasi.png) 
 
 ### 5. Halaman Help
