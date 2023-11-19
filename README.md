@@ -3,7 +3,8 @@
 ![tampilan gambar](img/welcome.png)  
   
 Rantai Kode, web visual programming pengganti [Tandakurung Node](https://github.com/AngkasaMuhammad/TandakurungNode)  
-  
+
+Silakan kunjungi [Rantai Kode v0](https://angkasamuhammad.github.io/RantaiKode/Rantai%20Kode%20v0.html)  
 ### 1. Halaman Utama
 ![Halaman Utama](img/Halaman%20Utama.png) 
 
