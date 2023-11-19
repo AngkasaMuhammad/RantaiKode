@@ -2,8 +2,11 @@
   
 ![tampilan gambar](img/welcome.png)  
   
-Rantai Kode, web visual programming pengganti [Tandakurung Node](https://github.com/AngkasaMuhammad/TandakurungNode)  
+Rantai Kode, web visual programming yang dilengkapi dengan animasi berupa susunan beberapa node  
+Web ini dibuat menggunakan [Tandakurung Node](https://github.com/AngkasaMuhammad/TandakurungNode)  
+Matrix 3x3 digunakan untuk transformasi objek animasi agar bisa geser, putar, skala, dan perspective.  
 
+  
 Silakan kunjungi [Rantai Kode v0](https://angkasamuhammad.github.io/RantaiKode/Rantai%20Kode%20v0.html)  
 ### 1. Halaman Utama
 ![Halaman Utama](img/Halaman%20Utama.png) 
