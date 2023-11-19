@@ -3,7 +3,7 @@
 ![tampilan gambar](img/welcome.png)  
   
 Rantai Kode, web visual programming yang dilengkapi dengan animasi berupa susunan beberapa node  
-Web ini dibuat menggunakan [Tandakurung Node](https://github.com/AngkasaMuhammad/TandakurungNode)  
+Web ini dibuat menggunakan project aku sebelumnya, yaitu [Tandakurung Node](https://github.com/AngkasaMuhammad/TandakurungNode)  
 Matrix 3x3 digunakan untuk transformasi objek animasi agar bisa geser, putar, skala, dan perspective.  
 
   
