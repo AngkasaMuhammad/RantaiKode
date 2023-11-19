@@ -1,19 +1,68 @@
 {
 	"namasimpan": "json.kotakkotak",
 	"namaexport": "kotakkotak.html",
-	"label": "coba",
+	"label": "mylabel",
 	"matcam": [
-		1,
+		0.995944619178772,
+		0.08996827900409698,
 		0,
+		-0.08996827900409698,
+		0.995944619178772,
 		0,
-		0,
-		1,
-		0,
-		0,
-		0,
+		315.1674499511719,
+		132.27813720703125,
 		1
 	],
-	"animasi": [],
+	"animasi": [
+		{
+			"node": 10,
+			"matrix": [
+				{
+					"node": 15,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 2,
+					"time": 320.00651599999827,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 20,
+			"matrix": [
+				{
+					"node": 25,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 2,
+					"time": 320.00651599999827,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		},
+		{
+			"node": 30,
+			"matrix": [
+				{
+					"node": 35,
+					"operasi": "none",
+					"usechi": true,
+					"playing": true,
+					"start": 0,
+					"end": 2,
+					"time": 320.00651599999827,
+					"speed": 1,
+					"label": "mylabel"
+				}
+			]
+		}
+	],
 	"nodes": [
 		{
 			"name": "kotakkotak.html animasi kotak berwarna",
@@ -21,8 +70,8 @@
 				1,
 				2,
 				3,
-				4,
-				5
+				9,
+				40
 			],
 			"matlok": [
 				1,
@@ -95,7 +144,13 @@
 		},
 		{
 			"name": "bikin canvas",
-			"children": [],
+			"children": [
+				4,
+				5,
+				6,
+				7,
+				8
+			],
 			"matlok": [
 				1,
 				0,
@@ -107,7 +162,7 @@
 				129.9999237060547,
 				1
 			],
-			"fill": "#0000ff55",
+			"fill": "#333333",
 			"stroke": "#ff974f",
 			"SHchildren": true,
 			"SHstroke": true,
@@ -118,8 +173,135 @@
 			"_idxini_": "3_segera_dHapus_"
 		},
 		{
-			"name": "animasi kotak",
+			"name": "pojok",
 			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				263.90008544921875,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.013513513513513147,
+			"data": "",
+			"_idxini_": "4_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				461.50006103515625,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.11261261261261225,
+			"data": "",
+			"_idxini_": "5_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				461.50006103515625,
+				115.70005798339844,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.17567567567567532,
+			"data": "",
+			"_idxini_": "6_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				263.9000549316406,
+				115.70005798339844,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.31981981981981944,
+			"data": "",
+			"_idxini_": "7_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				263.9000549316406,
+				0.00005302429053699598,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#bfff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.5360360360360357,
+			"data": "",
+			"_idxini_": "8_segera_dHapus_"
+		},
+		{
+			"name": "animasi kotak",
+			"children": [
+				10,
+				15,
+				20,
+				25,
+				30,
+				35
+			],
 			"matlok": [
 				1,
 				0,
@@ -134,12 +316,762 @@
 			"fill": "#0000ff55",
 			"stroke": "#4fabff",
 			"SHchildren": true,
-			"SHstroke": true,
-			"SHfill": true,
+			"SHstroke": false,
+			"SHfill": false,
 			"SHname": true,
 			"order": 2,
 			"data": "\nsetInterval(()=>{\n\tcx.fillStyle = `rgba(\n\t\t${Math.random()*255},\n\t\t${Math.random()*255},\n\t\t${Math.random()*255},\n\t\t${Math.random()}\n\t)`\n\tcx.fillRect(\n\t\tcanv.width*Math.random(),\n\t\tcanv.height*Math.random(),\n\t\tcanv.width*Math.random(),\n\t\tcanv.height*Math.random(),\n\t)\n},111,)\n",
-			"_idxini_": "4_segera_dHapus_"
+			"_idxini_": "9_segera_dHapus_"
+		},
+		{
+			"name": "kotak0",
+			"children": [
+				11,
+				12,
+				13,
+				14
+			],
+			"matlok": [
+				0.00009853389929048717,
+				0,
+				0,
+				0,
+				0.00009853389929048717,
+				0,
+				390.00006103515625,
+				9.321213134683148e-9,
+				1
+			],
+			"fill": "pink",
+			"stroke": "cyan",
+			"SHchildren": false,
+			"SHstroke": false,
+			"SHfill": true,
+			"SHname": false,
+			"order": 0,
+			"data": "",
+			"_idxini_": "10_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1,
+			"data": "",
+			"_idxini_": "11_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "12_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 3,
+			"data": "",
+			"_idxini_": "13_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 4,
+			"data": "",
+			"_idxini_": "14_segera_dHapus_"
+		},
+		{
+			"name": "gerak0",
+			"children": [
+				16,
+				17,
+				18,
+				19
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#f8ff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1,
+			"data": "",
+			"_idxini_": "15_segera_dHapus_"
+		},
+		{
+			"name": "node76",
+			"children": [],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				390.00006103515625,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0,
+			"data": "",
+			"_idxini_": "16_segera_dHapus_"
+		},
+		{
+			"name": "node76",
+			"children": [],
+			"matlok": [
+				0.000009999999747378752,
+				0,
+				0,
+				0,
+				0.000009999999747378752,
+				0,
+				390.0000305175781,
+				5.722046125811175e-7,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.4,
+			"data": "",
+			"_idxini_": "17_segera_dHapus_"
+		},
+		{
+			"name": "node76",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				390.0000305175781,
+				5.722046125811175e-7,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.4001,
+			"data": "",
+			"_idxini_": "18_segera_dHapus_"
+		},
+		{
+			"name": "node76",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				390.0000305175781,
+				5.722046125811175e-7,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "19_segera_dHapus_"
+		},
+		{
+			"name": "kotak1",
+			"children": [
+				21,
+				22,
+				23,
+				24
+			],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				345.51544189453125,
+				16.900001525878906,
+				1
+			],
+			"fill": "#55aa00bb",
+			"stroke": "cyan",
+			"SHchildren": false,
+			"SHstroke": false,
+			"SHfill": true,
+			"SHname": false,
+			"order": 2.0540540540540544,
+			"data": "",
+			"_idxini_": "20_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1,
+			"data": "",
+			"_idxini_": "21_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "22_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 3,
+			"data": "",
+			"_idxini_": "23_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 4,
+			"data": "",
+			"_idxini_": "24_segera_dHapus_"
+		},
+		{
+			"name": "gerak1",
+			"children": [
+				26,
+				27,
+				28,
+				29
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#ffd64f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 3.0540540540540544,
+			"data": "",
+			"_idxini_": "25_segera_dHapus_"
+		},
+		{
+			"name": "node86",
+			"children": [],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				345.51544189453125,
+				16.900001525878906,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#4fffbd",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0,
+			"data": "",
+			"_idxini_": "26_segera_dHapus_"
+		},
+		{
+			"name": "node86",
+			"children": [],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				345.51544189453125,
+				16.900001525878906,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#4fffbd",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.8,
+			"data": "",
+			"_idxini_": "27_segera_dHapus_"
+		},
+		{
+			"name": "node86",
+			"children": [],
+			"matlok": [
+				7.950196743011475,
+				0,
+				0,
+				0,
+				0.7410112619400024,
+				0,
+				277.704345703125,
+				52.54262924194336,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#4fffbd",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0.8001,
+			"data": "",
+			"_idxini_": "28_segera_dHapus_"
+		},
+		{
+			"name": "node86",
+			"children": [],
+			"matlok": [
+				7.950196743011475,
+				0,
+				0,
+				0,
+				0.7410112619400024,
+				0,
+				277.704345703125,
+				52.54262924194336,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#4fffbd",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "29_segera_dHapus_"
+		},
+		{
+			"name": "kotak2",
+			"children": [
+				31,
+				32,
+				33,
+				34
+			],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				425.1001281738281,
+				111.79998779296875,
+				1
+			],
+			"fill": "#00ffff66",
+			"stroke": "cyan",
+			"SHchildren": false,
+			"SHstroke": false,
+			"SHfill": true,
+			"SHname": false,
+			"order": 4.045045045045046,
+			"data": "",
+			"_idxini_": "30_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1,
+			"data": "",
+			"_idxini_": "31_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				-10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "32_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 3,
+			"data": "",
+			"_idxini_": "33_segera_dHapus_"
+		},
+		{
+			"name": "pojok",
+			"children": [],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				-10,
+				10,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#e04fff",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 4,
+			"data": "",
+			"_idxini_": "34_segera_dHapus_"
+		},
+		{
+			"name": "gerak2",
+			"children": [
+				36,
+				37,
+				38,
+				39
+			],
+			"matlok": [
+				1,
+				0,
+				0,
+				0,
+				1,
+				0,
+				0,
+				0,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "#9bff4f",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 5.045045045045046,
+			"data": "",
+			"_idxini_": "35_segera_dHapus_"
+		},
+		{
+			"name": "nodddeeeee",
+			"children": [],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				425.1001281738281,
+				111.79998779296875,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "white",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 0,
+			"data": "",
+			"_idxini_": "36_segera_dHapus_"
+		},
+		{
+			"name": "nodddeeeee",
+			"children": [],
+			"matlok": [
+				0.00009999999747378752,
+				0,
+				0,
+				0,
+				0.00009999999747378752,
+				0,
+				425.1001281738281,
+				111.79998779296875,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "white",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1.2,
+			"data": "",
+			"_idxini_": "37_segera_dHapus_"
+		},
+		{
+			"name": "nodddeeeee",
+			"children": [],
+			"matlok": [
+				6.674863815307617,
+				0,
+				0,
+				0,
+				10.796053886413574,
+				0,
+				369.7162780761719,
+				111.79998779296875,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "white",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 1.2001,
+			"data": "",
+			"_idxini_": "38_segera_dHapus_"
+		},
+		{
+			"name": "nodddeeeee",
+			"children": [],
+			"matlok": [
+				6.674863815307617,
+				0,
+				0,
+				0,
+				10.796053886413574,
+				0,
+				369.7162780761719,
+				111.79998779296875,
+				1
+			],
+			"fill": "#0000ff55",
+			"stroke": "white",
+			"SHchildren": true,
+			"SHstroke": false,
+			"SHfill": false,
+			"SHname": false,
+			"order": 2,
+			"data": "",
+			"_idxini_": "39_segera_dHapus_"
 		},
 		{
 			"name": "html bawah",
@@ -163,7 +1095,7 @@
 			"SHname": true,
 			"order": 3,
 			"data": "\n\n\n//============\n\t\t</script>\n\t</body>\n</html>\n",
-			"_idxini_": "5_segera_dHapus_"
+			"_idxini_": "40_segera_dHapus_"
 		},
 		{
 			"name": "Silakan langsung export",
@@ -187,7 +1119,7 @@
 			"SHname": true,
 			"order": 1,
 			"data": "",
-			"_idxini_": 6
+			"_idxini_": 41
 		}
 	]
 }
